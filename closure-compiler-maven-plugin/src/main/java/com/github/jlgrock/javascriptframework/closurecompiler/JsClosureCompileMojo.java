@@ -193,7 +193,7 @@ public class JsClosureCompileMojo extends AbstractMojo {
 	 * "http://code.google.com/closure/compiler/docs/compilation_levels.html"
 	 * >Google Compiler levels page</a> for more details.
 	 * 
-	 * @parameter default-value="ADVANCED_OPTIMIZATIONS"
+	 * @parameter default-value="${jsframework.optimizations}"
 	 * @required
 	 */
 	private String compileLevel;
@@ -212,7 +212,7 @@ public class JsClosureCompileMojo extends AbstractMojo {
 	 * </ul>
 	 * <br/>
 	 * 
-	 * @parameter default-value="STRICT"
+	 * @parameter default-value="${jsframework.errorlevel}"
 	 */
 	private String errorLevel;
 
